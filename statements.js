@@ -34,7 +34,7 @@ let time = 15;
 
 // let a = 7 / 2; // 3.5 --- 1
 
-// let num = -7;
+let num = 7;
 
 // let remainder = num % 2; // 1
 
@@ -44,7 +44,13 @@ let time = 15;
 //   if (num % 2 === 0) {
 //     console.log("The number is positive and even.");
 //   } else {
-//     console.log("The number is positive and odd.");
+//     if (num > 10) {
+//       console.log("The number is positive and odd and greater than 10.");
+//     } else {
+//       console.log(
+//         "The number is positive and odd and less than or equal to 10."
+//       );
+//     }
 //   }
 // } else {
 //   console.log("The number is negative or zero.");
@@ -94,6 +100,6 @@ let time = 15;
 console.log(1);
 console.log(2);
 
-for (let index = 0; index < 100; index++) {
-  console.log("Number...", index);
-}
+// for (let index = 0; index < 100; index++) {
+//   console.log("Number...", index);
+// }
