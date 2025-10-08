@@ -6,22 +6,35 @@
     <title>Document</title>
     <link rel="stylesheet" href="home.css" />
     <style>
-      h1 {
-        display: inline-block;
-        padding: 10px;
-        height: 500px;
-        border-right: 1px solid black;
+      .btn {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: darkblue;
+      }
+      a {
+        color: azure;
+        text-decoration: none;
       }
     </style>
   </head>
   <body>
     <h1>Git Class</h1>
-    <p>Welcome to the Git class!</p>
-    <p>This is a beginner-friendly introduction to Git.</p>
-    <p>
+    <p id="intro" class="class1">Welcome to the Git class!</p>
+    <p class="class1">This is a beginner-friendly introduction to Git.</p>
+    <p class="class1">
       We will cover the basics of version control and how to use Git
       effectively.
     </p>
+    <button class="btn">
+      <a href="https://www.google.com" target="_blank">Start Learning</a>
+    </button>
 
     <!-- <script src="home.js"></script> -->
     <!-- <script src="statements.js"></script> -->
@@ -29,6 +42,7 @@
     <!-- <script src="strings.js"></script> -->
     <!-- <script src="object.js"></script> -->
     <!-- <script src="hoisting.js"></script> -->
-    <script src="function.js"></script>
+    <!-- <script src="function.js"></script> -->
+    <script src="dom.js"></script>
   </body>
 </html>
