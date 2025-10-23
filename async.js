@@ -226,3 +226,48 @@
 // const greetCarol = greet.bind(person);
 
 // greetCarol();
+
+// const multiply = function (a, b, ...args) {
+//   console.log(args[2]);
+//   console.log(a * b);
+// };
+
+// // multiply(5, 10, 30, 40, 50, 58, 59, 40);
+
+// const arr = [10, 20, 30, 40, 50];
+
+// const [first, second, ...rest] = arr;
+
+// const obj = {
+//   firstName: "chinmay",
+//   lastName: "bansal",
+//   address: {
+//     city: "pune",
+//     country: "India",
+//   },
+// };
+
+// const secondObj = { age: 30, ...obj };
+
+// console.log(secondObj);
+
+const obj1 = {
+  firstName: "chinmay",
+  lastName: "bansal",
+  address: {
+    city: "pune",
+    country: "India",
+  },
+};
+
+const obj2 = obj1;
+
+const obj3 = { ...obj1 };
+
+obj3.firstName = "poorva";
+
+console.log(obj1.address === obj3.address);
+
+const obj4 = JSON.parse(JSON.stringify(obj1));
+
+console.log(obj1.address === obj4.address);
